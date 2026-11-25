@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "energy-eda"
+version = "1.0.0"
+description = "Exploratory analysis of the global energy transition: who decarbonized electricity, how fast, and what archetypes exist"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["pandas>=2.1", "numpy>=1.26", "scipy>=1.11", "scikit-learn>=1.3", "matplotlib>=3.8"]
+
+[project.optional-dependencies]
+notebook = ["nbformat>=5.9", "nbclient>=0.9", "ipykernel>=6.29"]
+dev = ["pytest>=8.0", "pyflakes>=3.2", "nbformat>=5.9", "nbclient>=0.9", "ipykernel>=6.29"]
+
+[project.scripts]
+energy-eda = "energy_eda.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]
+testpaths = ["tests"]

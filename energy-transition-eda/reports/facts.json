@@ -1,0 +1,300 @@
+{
+  "years": {
+    "start": 2014,
+    "end": 2024,
+    "gdp_year": 2022,
+    "min_twh": 5.0
+  },
+  "data": {
+    "rows": 23377,
+    "entities": 314,
+    "countries": 220,
+    "aggregates": 94,
+    "first_year": 1900,
+    "last_year": 2025,
+    "countries_with_electricity": {
+      "2023": 212,
+      "2024": 196,
+      "2025": 90
+    },
+    "countries_with_gdp_last_year": 165,
+    "last_gdp_year": 2022,
+    "double_count": {
+      "checked": 122,
+      "over_100": 73,
+      "max_total": 122.4
+    },
+    "inconsistent_rows": 107,
+    "inconsistent_years": [
+      1985,
+      1999
+    ],
+    "countries_compared": 113
+  },
+  "world": {
+    "low_carbon_start": 32.8,
+    "low_carbon_end": 40.9,
+    "coal_share_start": 40.4,
+    "coal_share_end": 34.1,
+    "intensity_start": 545,
+    "intensity_end": 471,
+    "generation_start": 23747,
+    "generation_end": 30930,
+    "wind_solar_start": 3.8,
+    "wind_solar_end": 15.0,
+    "coal_twh_end": 10539,
+    "coal_twh_start": 9604,
+    "coal_peak_year": 2024,
+    "coal_peak_twh": 10539,
+    "coal_growth_pct": 9.7,
+    "generation_growth_pct": 30
+  },
+  "changes": {
+    "gained_10pp": 38,
+    "lost": 21,
+    "top": [
+      {
+        "country": "Estonia",
+        "start": 11.2,
+        "end": 55.8,
+        "change": 44.6
+      },
+      {
+        "country": "Lebanon",
+        "start": 1.2,
+        "end": 43.8,
+        "change": 42.7
+      },
+      {
+        "country": "Netherlands",
+        "start": 15.4,
+        "end": 53.7,
+        "change": 38.2
+      },
+      {
+        "country": "Belarus",
+        "start": 0.8,
+        "end": 37.3,
+        "change": 36.5
+      },
+      {
+        "country": "Venezuela",
+        "start": 55.9,
+        "end": 91.1,
+        "change": 35.3
+      },
+      {
+        "country": "Denmark",
+        "start": 56.1,
+        "end": 89.2,
+        "change": 33.0
+      }
+    ],
+    "bottom": [
+      {
+        "country": "Ghana",
+        "start": 63.6,
+        "end": 36.2,
+        "change": -27.4
+      },
+      {
+        "country": "Laos",
+        "start": 100.0,
+        "end": 76.7,
+        "change": -23.3
+      },
+      {
+        "country": "Mozambique",
+        "start": 98.7,
+        "end": 83.4,
+        "change": -15.2
+      },
+      {
+        "country": "Myanmar",
+        "start": 63.0,
+        "end": 47.9,
+        "change": -15.1
+      }
+    ]
+  },
+  "intensity": {
+    "n": 113,
+    "slope": -7.3,
+    "intercept": -6.1,
+    "rho": -0.93,
+    "ci": [
+      -0.96,
+      -0.88
+    ]
+  },
+  "adoption": {
+    "took_off": 93,
+    "reached_10": 57,
+    "censored": 36,
+    "median_years": 9.0,
+    "q1": 5.0,
+    "q3": 11.0,
+    "recent_median": 3.5,
+    "recent_n": 12,
+    "early_median": 12.0,
+    "early_n": 21
+  },
+  "wealth": [
+    {
+      "outcome": "Low-carbon share of electricity (%)",
+      "rho": -0.09,
+      "ci_low": -0.25,
+      "ci_high": 0.08,
+      "n": 145
+    },
+    {
+      "outcome": "Renewables share (%)",
+      "rho": -0.21,
+      "ci_low": -0.37,
+      "ci_high": -0.03,
+      "n": 145
+    },
+    {
+      "outcome": "Fossil share (%)",
+      "rho": 0.09,
+      "ci_low": -0.08,
+      "ci_high": 0.25,
+      "n": 145
+    },
+    {
+      "outcome": "Carbon intensity (gCO2/kWh)",
+      "rho": 0.05,
+      "ci_low": -0.12,
+      "ci_high": 0.21,
+      "n": 145
+    },
+    {
+      "outcome": "Electricity per person (kWh)",
+      "rho": 0.89,
+      "ci_low": 0.83,
+      "ci_high": 0.93,
+      "n": 145
+    }
+  ],
+  "rich": {
+    "n": 37,
+    "p10": 2,
+    "p90": 92
+  },
+  "clusters": {
+    "k": 5,
+    "silhouette": 0.312,
+    "stability": 0.83,
+    "scores": [
+      {
+        "k": 4,
+        "silhouette": 0.298,
+        "stability": 0.882
+      },
+      {
+        "k": 5,
+        "silhouette": 0.312,
+        "stability": 0.83
+      },
+      {
+        "k": 6,
+        "silhouette": 0.311,
+        "stability": 0.829
+      },
+      {
+        "k": 7,
+        "silhouette": 0.274,
+        "stability": 0.698
+      },
+      {
+        "k": 8,
+        "silhouette": 0.236,
+        "stability": 0.663
+      }
+    ],
+    "sizes": {
+      "Hydro-dominated": 38,
+      "Gas-dominated": 34,
+      "Coal-dominated": 21,
+      "Nuclear + Gas": 20,
+      "Oil-dominated": 9
+    },
+    "members": {
+      "Hydro-dominated": [
+        "Brazil",
+        "Canada",
+        "Norway",
+        "Colombia"
+      ],
+      "Gas-dominated": [
+        "Iran",
+        "Mexico",
+        "Italy",
+        "Egypt"
+      ],
+      "Coal-dominated": [
+        "China",
+        "India",
+        "Japan",
+        "Germany"
+      ],
+      "Nuclear + Gas": [
+        "United States",
+        "Russia",
+        "South Korea",
+        "France"
+      ],
+      "Oil-dominated": [
+        "Puerto Rico",
+        "Cuba",
+        "Honduras",
+        "Senegal"
+      ]
+    },
+    "most_wind_solar": {
+      "name": "Nuclear + Gas",
+      "share": 24
+    },
+    "moved": 13,
+    "transition_total": 113
+  },
+  "coal": {
+    "countries": 76,
+    "past_peak": 43,
+    "past_peak_before_2015": 29,
+    "biggest": [
+      {
+        "country": "United States",
+        "peak_year": 1999,
+        "peak": 2038,
+        "latest": 652
+      },
+      {
+        "country": "United Kingdom",
+        "peak_year": 1991,
+        "peak": 211,
+        "latest": 2
+      },
+      {
+        "country": "Germany",
+        "peak_year": 1986,
+        "peak": 315,
+        "latest": 106
+      },
+      {
+        "country": "Canada",
+        "peak_year": 2000,
+        "peak": 116,
+        "latest": 25
+      }
+    ]
+  },
+  "concentration": {
+    "solar_start": 68,
+    "solar_end": 68,
+    "solar_start_countries": "Germany, United States, Japan, China, Italy",
+    "solar_countries": "China, United States, India, Japan, Germany",
+    "wind_end": 71,
+    "wind_countries": "China, United States, Germany, Brazil, United Kingdom"
+  }
+}
